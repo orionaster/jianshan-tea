@@ -169,6 +169,31 @@
     });
   }
 
+  /* 展示级标题里的全角标点收紧，见 core.css 的 .ts */
+  const TIGHT = {
+    "，": "ts", "。": "ts", "、": "ts", "！": "ts", "？": "ts", "；": "ts",
+    "：": "ts-colon", "“": "ts-open",
+  };
+  Array.prototype.forEach.call(doc.querySelectorAll("h1, h2"), function (head) {
+    const walk = doc.createTreeWalker(head, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let t;
+    while ((t = walk.nextNode())) {
+      if (Array.from(t.nodeValue).some(function (c) { return TIGHT[c]; })) nodes.push(t);
+    }
+    nodes.forEach(function (tn) {
+      const frag = doc.createDocumentFragment();
+      Array.from(tn.nodeValue).forEach(function (c) {
+        if (!TIGHT[c]) { frag.appendChild(doc.createTextNode(c)); return; }
+        const s = doc.createElement("span");
+        s.className = TIGHT[c];
+        s.textContent = c;
+        frag.appendChild(s);
+      });
+      tn.parentNode.replaceChild(frag, tn);
+    });
+  });
+
   /* year */
   doc.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = String(new Date().getFullYear());

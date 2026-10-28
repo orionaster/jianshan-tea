@@ -66,6 +66,15 @@
   if (originImg) {
     originImg.src = tea.originImg;
     originImg.alt = tea.originAlt;
+    /* srcset 随 src 一起换，否则浏览器仍按旧候选取图 */
+    const SRCSET = {
+      "assets/img/garden.webp": "assets/img/garden-720w.webp 720w, assets/img/garden.webp 1000w",
+      "assets/img/fresh-leaves.webp": "assets/img/fresh-leaves-720w.webp 720w, assets/img/fresh-leaves.webp 900w",
+      "assets/img/withering.webp": "assets/img/withering-720w.webp 720w, assets/img/withering.webp 1200w",
+    };
+    const ss = SRCSET[tea.originImg];
+    if (ss) originImg.setAttribute("srcset", ss);
+    else originImg.removeAttribute("srcset");
   }
 
   const liquor = document.querySelector("[data-tea-liquor]");

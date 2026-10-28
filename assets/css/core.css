@@ -960,3 +960,21 @@ button {
 .tea-craft__media img {
   filter: saturate(0.9) contrast(1.02);
 }
+
+/* ---------- 展示级标题的全角标点收紧 ----------
+   ，。、：的字符框自带约 0.7em 右侧空白，字号越大越像标点前后多打了个空格。 */
+h1 .ts,
+h2 .ts {
+  margin-right: -0.62em;
+}
+
+h1 .ts-colon,
+h2 .ts-colon {
+  margin-right: -0.34em;
+  margin-left: -0.17em;
+}
+
+h1 .ts-open,
+h2 .ts-open {
+  margin-left: -0.46em;
+}

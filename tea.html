@@ -14,6 +14,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/core.css">
   <link rel="stylesheet" href="assets/css/product.css">
   <script>document.documentElement.classList.add("js");</script>
@@ -153,7 +155,7 @@
     <section class="tea-origin section" aria-labelledby="tea-origin-title">
       <div class="wrap tea-origin__grid">
         <figure class="tea-origin__media" data-reveal>
-          <img data-tea-origin-img src="assets/img/garden.webp" alt="清晨在慧苑坑的岩壁间采摘茶青" width="900" height="1125" loading="lazy">
+          <img srcset="assets/img/garden-720w.webp 720w, assets/img/garden.webp 1000w" sizes="(max-width: 900px) 90vw, 45vw" data-tea-origin-img src="assets/img/garden.webp" alt="清晨在慧苑坑的岩壁间采摘茶青" width="900" height="1125" loading="lazy">
           <figcaption class="caption">慧苑坑 / 谷雨前</figcaption>
         </figure>
         <div class="tea-origin__copy" data-reveal style="--delay:.1s">
@@ -204,7 +206,7 @@
           </div>
         </div>
         <figure class="tea-craft__media" data-reveal style="--delay:.1s">
-          <img src="assets/img/craft.webp" alt="茶师在炭火上将茶叶拢入竹焙笼" width="900" height="1050" loading="lazy">
+          <img srcset="assets/img/craft-720w.webp 720w, assets/img/craft.webp 900w" sizes="(max-width: 900px) 90vw, 45vw" src="assets/img/craft.webp" alt="茶师在炭火上将茶叶拢入竹焙笼" width="900" height="1050" loading="lazy">
           <figcaption class="caption">炭焙 / 第四道</figcaption>
         </figure>
       </div>
@@ -267,7 +269,7 @@
           </div>
         </div>
         <figure class="tea-pack__media" data-reveal style="--delay:.1s">
-          <img src="assets/img/packaging.webp" alt="見山三款茶的马口铁罐包装" width="1400" height="826" loading="lazy">
+          <img srcset="assets/img/packaging-760w.webp 760w, assets/img/packaging.webp 1400w" sizes="(max-width: 900px) 90vw, 53vw" src="assets/img/packaging.webp" alt="見山三款茶的马口铁罐包装" width="1400" height="826" loading="lazy">
           <figcaption class="caption">三款 · 哑光铁罐 · 专色标签</figcaption>
         </figure>
       </div>
@@ -301,7 +303,7 @@
       <div class="footer__top">
         <div class="footer__brand">
           <p class="footer__word">見山</p>
-          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，一年一季。</p>
+          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，手工炭焙。</p>
         </div>
         <div class="footer__cols">
           <div class="footer__col">

@@ -4,16 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>見山 JIANSHAN — 武夷岩茶 · 慧苑坑</title>
-  <meta name="description" content="見山，来自武夷山慧苑坑的岩茶品牌。三亩老茶园，一年只做春茶一季：岩骨、白露、松风。">
+  <meta name="description" content="見山，来自武夷山慧苑坑的岩茶品牌。三亩老茶园，岩骨、白露、松风，三款单山场茶。">
   <meta name="theme-color" content="#f1ece1">
   <meta property="og:type" content="website">
   <meta property="og:title" content="見山 JIANSHAN — 武夷岩茶 · 慧苑坑">
-  <meta property="og:description" content="三亩老茶园，一年只做一季春茶。岩骨、白露、松风。">
+  <meta property="og:description" content="三亩老茶园，只做慧苑坑正岩。岩骨、白露、松风，每款 50 克。">
   <meta property="og:image" content="https://orionaster.github.io/jianshan-tea/assets/img/pour.webp">
   <meta property="og:url" content="https://orionaster.github.io/jianshan-tea/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/core.css">
   <link rel="stylesheet" href="assets/css/home.css">
   <script>document.documentElement.classList.add("js");</script>
@@ -72,12 +74,15 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <p class="hero__kicker"><span>Wuyi Rock Tea</span><span>慧苑坑 · 2016—</span></p>
+          <p class="hero__kicker"><span>Wuyi Rock Tea</span> <span>慧苑坑 · 2016—</span></p>
           <h1 id="hero-title">把一座山<br><span class="hero__line">收进一泡茶里</span></h1>
           <p class="hero__en">A mountain, steeped.</p>
         </div>
         <figure class="hero__media">
-          <img src="assets/img/pour.webp" alt="在茶席上注水冲泡岩茶" width="1024" height="1214" fetchpriority="high">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/img/pour-780w.webp">
+            <img srcset="assets/img/pour.webp 1024w" sizes="(min-width: 901px) 34vw" src="assets/img/pour.webp" alt="在茶席上注水冲泡岩茶" width="1024" height="1214" fetchpriority="high">
+          </picture>
           <figcaption><span>01</span> 慧苑坑 · 2026 春</figcaption>
         </figure>
         <div class="hero__foot">
@@ -92,7 +97,7 @@
       <div class="ticker__track">
         <div class="ticker__group">
           <span>慧苑坑 · 正岩核心</span><i></i>
-          <span>春茶一季</span><i></i>
+          <span>谷雨前后</span><i></i>
           <span>手工炭焙</span><i></i>
           <span>年产六百斤</span><i></i>
           <span>三亩老茶园</span><i></i>
@@ -100,7 +105,7 @@
         </div>
         <div class="ticker__group">
           <span>慧苑坑 · 正岩核心</span><i></i>
-          <span>春茶一季</span><i></i>
+          <span>谷雨前后</span><i></i>
           <span>手工炭焙</span><i></i>
           <span>年产六百斤</span><i></i>
           <span>三亩老茶园</span><i></i>
@@ -162,7 +167,7 @@
           <p class="origin__coords">27°43′N · 117°41′E<br>海拔 280—320 M</p>
         </div>
         <figure class="origin__media" data-reveal>
-          <img src="assets/img/withering.webp" alt="竹筛上薄摊的茶青正在萎凋" width="1200" height="1423" loading="lazy">
+          <img srcset="assets/img/withering-720w.webp 720w, assets/img/withering.webp 1200w" sizes="(max-width: 900px) 90vw, 45vw" src="assets/img/withering.webp" alt="竹筛上薄摊的茶青正在萎凋" width="1200" height="1423" loading="lazy">
           <figcaption class="caption">谷雨前，慧苑坑的第一摊青</figcaption>
         </figure>
         <dl class="origin__facts">
@@ -188,7 +193,7 @@
           </div>
           <div data-reveal style="--delay:.25s">
             <dt>年产</dt>
-            <dd>六百斤 · 春茶一季</dd>
+            <dd>六百斤 · 三亩合计</dd>
           </div>
         </dl>
       </div>
@@ -201,7 +206,7 @@
             <p class="label label--dark"><span class="label__num">03</span> 茶 / The teas</p>
             <h2 id="teas-title">三款茶，<br>一座山。</h2>
           </div>
-          <p class="collection__note">同一片砾壤，三种品种与火功。每款 50 克，一年一采。喝完再开下一罐。</p>
+          <p class="collection__note">同一片砾壤，三种品种与火功。每款 50 克，喝完再开下一罐。</p>
         </header>
         <div class="teas">
           <a class="tea-card" href="tea.html?tea=yan-gu" data-reveal>
@@ -245,7 +250,7 @@
     <section class="packaging section" id="packaging" aria-labelledby="packaging-title">
       <div class="wrap packaging__grid">
         <figure class="packaging__media" data-reveal>
-          <img src="assets/img/packaging.webp" alt="見山三款茶的马口铁罐包装：橄榄绿、砂岩色与朱红色" width="1400" height="826" loading="lazy">
+          <img srcset="assets/img/packaging-760w.webp 760w, assets/img/packaging.webp 1400w" sizes="(max-width: 900px) 90vw, 53vw" src="assets/img/packaging.webp" alt="見山三款茶的马口铁罐包装：橄榄绿、砂岩色与朱红色" width="1400" height="826" loading="lazy">
           <figcaption class="caption">包装 / 三款 · 50g 哑光铁罐 · 专色标签</figcaption>
         </figure>
         <div class="packaging__copy" data-reveal style="--delay:.1s">
@@ -319,7 +324,7 @@
     <section class="craft section" id="craft" aria-labelledby="craft-title">
       <div class="wrap craft__grid">
         <div class="craft__visual">
-          <img src="assets/img/craft.webp" alt="茶师在炭火上将茶叶拢入竹焙笼" width="900" height="1050" loading="lazy">
+          <img srcset="assets/img/craft-720w.webp 720w, assets/img/craft.webp 900w" sizes="(max-width: 900px) 90vw, 45vw" src="assets/img/craft.webp" alt="茶师在炭火上将茶叶拢入竹焙笼" width="900" height="1050" loading="lazy">
           <div class="craft__visual-foot"><span>荔枝炭 · 手工焙</span><span>三道火 · 四十五天</span></div>
         </div>
         <div class="craft__copy">
@@ -370,7 +375,7 @@
     <section class="visit-section" id="visit" aria-labelledby="visit-title">
       <div class="wrap visit-section__grid">
         <figure class="visit-section__media" data-reveal>
-          <img src="assets/img/room.webp" alt="慧苑坑茶室，一张长桌与窗外的山影" width="1400" height="873" loading="lazy">
+          <img srcset="assets/img/room-800w.webp 800w, assets/img/room.webp 1400w" sizes="(max-width: 900px) 100vw, 45vw" src="assets/img/room.webp" alt="慧苑坑茶室，一张长桌与窗外的山影" width="1400" height="873" loading="lazy">
           <figcaption class="caption">茶室 / 三席 · 预约制</figcaption>
         </figure>
         <div class="visit-section__copy" data-reveal style="--delay:.1s">
@@ -393,7 +398,7 @@
       <div class="footer__top">
         <div class="footer__brand">
           <p class="footer__word">見山</p>
-          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，一年一季。</p>
+          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，手工炭焙。</p>
         </div>
         <div class="footer__cols">
           <div class="footer__col">

@@ -14,6 +14,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/core.css">
   <link rel="stylesheet" href="assets/css/case-study.css">
   <script>document.documentElement.classList.add("js");</script>
@@ -82,7 +84,7 @@
         </dl>
       </div>
       <figure class="cs-hero__media">
-        <img src="assets/img/case-home.jpg" alt="見山首页：巨大的中文标题与注水泡茶的竖幅照片" width="1440" height="900" fetchpriority="high">
+        <img srcset="assets/img/case-home-1000w.jpg 1000w, assets/img/case-home.jpg 1440w" sizes="(max-width: 900px) 90vw, 68vw" src="assets/img/case-home.jpg" alt="見山首页：巨大的中文标题与注水泡茶的竖幅照片" width="1440" height="900" fetchpriority="high">
         <figcaption>首页 / 1440 × 900</figcaption>
       </figure>
     </section>
@@ -187,7 +189,7 @@
             </div>
           </div>
           <figure class="cs-figure" data-reveal>
-            <img src="assets/img/case-dossier.jpg" alt="茶品页的批次档案：LOT 编号、焙火曲线、本批斤数与退火天数" width="1440" height="900" loading="lazy">
+            <img srcset="assets/img/case-dossier-1000w.jpg 1000w, assets/img/case-dossier.jpg 1440w" sizes="(max-width: 900px) 90vw, 68vw" src="assets/img/case-dossier.jpg" alt="茶品页的批次档案：LOT 编号、焙火曲线、本批斤数与退火天数" width="1440" height="900" loading="lazy">
             <figcaption>批次档案 / 每条焙火曲线都来自同一份产品数据</figcaption>
           </figure>
         </div>
@@ -205,11 +207,11 @@
             <p>价格与克重始终同时出现；订购走真实的邮件链接，不假装有支付。避免“看起来高级但买不到”的假电商。</p>
           </div>
           <figure class="cs-figure" data-reveal>
-            <img src="assets/img/case-product.jpg" alt="見山茶品详情页与三罐包装" width="1440" height="900" loading="lazy">
+            <img srcset="assets/img/case-product-1000w.jpg 1000w, assets/img/case-product.jpg 1440w" sizes="(max-width: 900px) 90vw, 68vw" src="assets/img/case-product.jpg" alt="見山茶品详情页与三罐包装" width="1440" height="900" loading="lazy">
             <figcaption>茶品页 / 三款共用一套版式与数据层</figcaption>
           </figure>
           <figure class="cs-figure cs-figure--sheet" data-reveal>
-            <img src="assets/img/case-labels.jpg" alt="三款茶的罐面标签打样：岩骨、白露、松风，各有 LOT 编号" width="1440" height="374" loading="lazy">
+            <img srcset="assets/img/case-labels-1000w.jpg 1000w, assets/img/case-labels.jpg 1440w" sizes="(max-width: 900px) 90vw, 68vw" src="assets/img/case-labels.jpg" alt="三款茶的罐面标签打样：岩骨、白露、松风，各有 LOT 编号" width="1440" height="374" loading="lazy">
             <figcaption>标签打样 / 批次号、字体与印章共用一套规则</figcaption>
           </figure>
         </div>
@@ -226,7 +228,7 @@
             <p>温器、投茶、醒茶、注水、出汤。滚动推进，盖碗、水流、茶汤与步骤同步变化。没有劫持滚动：原生滚动、sticky 舞台、一个轻量状态机。</p>
           </div>
           <figure class="cs-figure cs-figure--dark" data-reveal>
-            <img src="assets/img/case-brew.jpg" alt="冲泡页的滚动交互：盖碗、橙红茶汤与步骤文案" width="1440" height="900" loading="lazy">
+            <img srcset="assets/img/case-brew-1000w.jpg 1000w, assets/img/case-brew.jpg 1440w" sizes="(max-width: 900px) 90vw, 68vw" src="assets/img/case-brew.jpg" alt="冲泡页的滚动交互：盖碗、橙红茶汤与步骤文案" width="1440" height="900" loading="lazy">
             <figcaption>冲泡 / 滚动第四步：注水</figcaption>
           </figure>
           <div class="cs-signature">
@@ -257,7 +259,7 @@
             <div><dt>共享数据层</dt><dd>01</dd></div>
           </dl>
           <figure class="cs-figure" data-reveal>
-            <img src="assets/img/case-visit.jpg" alt="到访页的预约成功状态：显示日期、席别、人数与预约编号" width="1440" height="900" loading="lazy">
+            <img srcset="assets/img/case-visit-1000w.jpg 1000w, assets/img/case-visit.jpg 1440w" sizes="(max-width: 900px) 90vw, 68vw" src="assets/img/case-visit.jpg" alt="到访页的预约成功状态：显示日期、席别、人数与预约编号" width="1440" height="900" loading="lazy">
             <figcaption>到访 / 预约成功状态与确认信息</figcaption>
           </figure>
         </div>
@@ -296,7 +298,7 @@
       <div class="footer__top">
         <div class="footer__brand">
           <p class="footer__word">見山</p>
-          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，一年一季。</p>
+          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，手工炭焙。</p>
         </div>
         <div class="footer__cols">
           <div class="footer__col">
