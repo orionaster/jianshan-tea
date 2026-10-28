@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>見山 JIANSHAN — 案例研究 Case Study</title>
+  <meta name="description" content="見山 JIANSHAN 案例研究：虚构武夷岩茶品牌从山场叙事、产品系统到冲泡交互与预约流程的完整构建。">
+  <meta name="theme-color" content="#f1ece1">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="見山 JIANSHAN — 案例研究 Case Study">
+  <meta property="og:description" content="让一泡茶，有据可依。一个虚构茶品牌的完整构建。">
+  <meta property="og:image" content="assets/img/case-home.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/core.css">
+  <link rel="stylesheet" href="assets/css/case-study.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="page-case">
+  <a class="skip" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="見山 JIANSHAN 首页">
+      <span class="brand__mark">見山</span>
+      <span class="brand__sub">JIANSHAN<br>Wuyi Rock Tea</span>
+    </a>
+    <nav class="primary-nav" aria-label="主导航">
+      <a href="index.html#teas">茶</a>
+      <a href="index.html#origin">山场</a>
+      <a href="brew.html">冲泡</a>
+      <a href="visit.html">到访</a>
+    </nav>
+    <div class="header__actions">
+      <a class="header__book" href="visit.html">预约茶席 <span aria-hidden="true">→</span></a>
+      <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="menu">
+        菜单
+        <span class="menu-toggle__bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="全站菜单" hidden aria-hidden="true">
+    <div class="menu__inner">
+      <div class="menu__top">
+        <span>見山 · 武夷岩茶</span>
+        <button class="menu__close" type="button" data-menu-close>关闭 <span aria-hidden="true">×</span></button>
+      </div>
+      <nav class="menu__nav" aria-label="全站导航">
+        <a href="index.html"><small>01</small>首页</a>
+        <a href="index.html#teas"><small>02</small>三款茶</a>
+        <a href="index.html#origin"><small>03</small>山场</a>
+        <a href="brew.html"><small>04</small>冲泡</a>
+        <a href="visit.html"><small>05</small>到访</a>
+        <a href="case-study.html"><small>06</small>案例研究</a>
+      </nav>
+      <div class="menu__foot">
+        <div>
+          <a href="mailto:tea@jianshan.co">tea@jianshan.co</a><br>
+          微信 · JIANSHAN-TEA
+        </div>
+        <div>
+          福建省武夷山市慧苑坑 27 号<br>
+          周四至周一 · 10:00—18:00
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" class="case">
+    <section class="cs-hero" aria-labelledby="case-title">
+      <div class="wrap">
+        <p class="label"><span class="label__num">Case study</span> 2026 · 独立项目</p>
+        <h1 id="case-title">見山：<br>让一泡茶，<br>有据可依。</h1>
+        <p class="cs-hero__lead">一个虚构的武夷岩茶品牌，从山场叙事、产品系统到冲泡交互与到访预约的完整构建。目标不是“看起来像茶品牌”，而是让人相信这泡茶真的存在。</p>
+        <dl class="cs-meta">
+          <div><dt>角色</dt><dd>品牌策略 / 视觉 / 前端</dd></div>
+          <div><dt>类型</dt><dd>虚构品牌 · 官网</dd></div>
+          <div><dt>时间</dt><dd>2026 · 独立项目</dd></div>
+          <div><dt>技术</dt><dd>HTML / CSS / JS · 零构建</dd></div>
+        </dl>
+      </div>
+      <figure class="cs-hero__media">
+        <img src="assets/img/case-home.jpg" alt="見山首页：巨大的中文标题与注水泡茶的竖幅照片" width="1440" height="900" fetchpriority="high">
+        <figcaption>首页 / 1440 × 900</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-summary" aria-labelledby="summary-title">
+      <div class="wrap cs-summary__grid">
+        <p class="label"><span class="label__num">00</span> 摘要 / Summary</p>
+        <h2 id="summary-title" data-reveal>把“茶很美”，<br>换成“为什么是这一泡”。</h2>
+        <div class="cs-summary__text" data-reveal style="--delay:.1s">
+          <p>网站要回答四个问题：这片山在哪、三款茶有什么不同、怎么泡、怎么来喝。整站的结构、视觉与动效，都围绕这条路径展开。</p>
+          <p>它不追求把页面做得更“满”，而是让每个细节都能被验证：产地、品种、火功、退火天数、克数、水温、出汤时间，以及一张真的能提交的预约表单。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="problem" aria-labelledby="problem-title">
+      <div class="wrap cs-section__grid">
+        <p class="label cs-section__label"><span class="label__num">01</span> 问题 / Problem</p>
+        <div class="cs-section__body">
+          <h2 id="problem-title" data-reveal>好看的茶站很多，<br>可信的很少。</h2>
+          <div class="cs-prose" data-reveal style="--delay:.08s">
+            <p>茶品牌官网常见两种：一种只有滤镜山水与毛笔字，一种把茶当快消品。两者都缺少可验证的细节。看起来高级，却无法回答“为什么是这一泡”。</p>
+            <p>初版也掉进了同一个坑：视觉先行，三款茶分别来自福鼎、桐木关和武夷山，和“一片山场”的主张自相矛盾。这次重做，先把事实排清楚，再谈风格。</p>
+          </div>
+          <blockquote class="cs-quote" data-reveal>
+            <p>“风格可以从任何地方借来，<br>细节只能自己长出来。”</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section cs-section--paper" id="strategy" aria-labelledby="strategy-title">
+      <div class="wrap cs-section__grid">
+        <p class="label cs-section__label"><span class="label__num">02</span> 策略 / Strategy</p>
+        <div class="cs-section__body">
+          <h2 id="strategy-title" data-reveal>一片山场，三款茶，<br>一条完整的路径。</h2>
+          <div class="cs-prose" data-reveal style="--delay:.08s">
+            <p>所有茶收回慧苑坑，用品种与火功区分：肉桂足火是岩骨，白鸡冠轻火是白露，六十年老丛水仙是松风。产地不再是一个装饰性的词，而是产品差异的来源。</p>
+            <p>页面结构也随之确定：认识、理解、实践、到达。每一步都只做一件事，并且把下一步交给用户。</p>
+          </div>
+          <ol class="cs-flow">
+            <li data-reveal>
+              <span>01</span>
+              <h3>认识</h3>
+              <p>先看见山场与三款茶的性格，而不是先看价格。</p>
+              <small>Home</small>
+            </li>
+            <li data-reveal style="--delay:.06s">
+              <span>02</span>
+              <h3>理解</h3>
+              <p>品种、火功、风味结构与山场，逐款拆开。</p>
+              <small>Tea detail</small>
+            </li>
+            <li data-reveal style="--delay:.12s">
+              <span>03</span>
+              <h3>实践</h3>
+              <p>五个动作与具体参数，回家也能复现。</p>
+              <small>Brew</small>
+            </li>
+            <li data-reveal style="--delay:.18s">
+              <span>04</span>
+              <h3>到达</h3>
+              <p>地址、路线、时席与预约表单，一条路走到底。</p>
+              <small>Visit</small>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="visual" aria-labelledby="visual-title">
+      <div class="wrap cs-section__grid">
+        <p class="label cs-section__label"><span class="label__num">03</span> 视觉 / System</p>
+        <div class="cs-section__body">
+          <h2 id="visual-title" data-reveal>纸、墨、朱砂，<br>和一条不对称的网格。</h2>
+          <div class="cs-prose" data-reveal style="--delay:.08s">
+            <p>纸色承担留白，墨色承担正文，朱砂只给动作、印记与关键数字。绿色只出现在茶罐上，不进入界面。中文用 Noto Serif SC，拉丁用 Instrument Serif 与 Instrument Sans：标题有骨，参数清楚。</p>
+            <p>十二栏网格允许图片向右出血，正文行长控制在三十到三十四个字。节奏来自不对称的留白，而不是更多的装饰。</p>
+            <p>第二层信息不靠滤镜：标签打样、批次号与焙火曲线，让“高级感”有东西可核对。</p>
+          </div>
+
+          <div class="cs-system">
+            <div class="cs-swatches" data-reveal>
+              <div class="cs-swatch"><span style="background:#f1ece1"></span><b>Paper</b><small>#F1ECE1</small></div>
+              <div class="cs-swatch"><span style="background:#15140f"></span><b>Ink</b><small>#15140F</small></div>
+              <div class="cs-swatch"><span style="background:#a13f2c"></span><b>Vermilion</b><small>#A13F2C</small></div>
+              <div class="cs-swatch"><span style="background:#5b6852"></span><b>Moss</b><small>#5B6852</small></div>
+            </div>
+            <div class="cs-type" data-reveal style="--delay:.08s">
+              <div class="cs-type__row">
+                <span>Noto Serif SC</span>
+                <p class="cs-type__cn">見山 · 岩骨花香</p>
+              </div>
+              <div class="cs-type__row">
+                <span>Instrument Serif Italic</span>
+                <p class="cs-type__serif">A mountain, steeped.</p>
+              </div>
+              <div class="cs-type__row">
+                <span>Instrument Sans</span>
+                <p class="cs-type__sans">WUYI ROCK TEA · HUIYUAN VALLEY · 2026</p>
+              </div>
+            </div>
+          </div>
+          <figure class="cs-figure" data-reveal>
+            <img src="assets/img/case-dossier.jpg" alt="茶品页的批次档案：LOT 编号、焙火曲线、本批斤数与退火天数" width="1440" height="900" loading="lazy">
+            <figcaption>批次档案 / 每条焙火曲线都来自同一份产品数据</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section cs-section--paper" id="product" aria-labelledby="product-title">
+      <div class="wrap cs-section__grid">
+        <p class="label cs-section__label"><span class="label__num">04</span> 产品 / Product</p>
+        <div class="cs-section__body">
+          <h2 id="product-title" data-reveal>三只罐子，<br>一套可以复用的产品系统。</h2>
+          <div class="cs-prose" data-reveal style="--delay:.08s">
+            <p>每款茶有独立的品种、火功、退火期、风味结构与冲泡参数。页面由一份共享数据渲染，用 <code>?tea=</code> 切换，而不是复制三份模板。</p>
+            <p>每款茶还带一张批次档案：LOT 编号、采摘日、本批斤数、焙火曲线与退火天数。罐面标签、茶品页和订购邮件共用同一个编号，线上线下的语气对得上。</p>
+            <p>价格与克重始终同时出现；订购走真实的邮件链接，不假装有支付。避免“看起来高级但买不到”的假电商。</p>
+          </div>
+          <figure class="cs-figure" data-reveal>
+            <img src="assets/img/case-product.jpg" alt="見山茶品详情页与三罐包装" width="1440" height="900" loading="lazy">
+            <figcaption>茶品页 / 三款共用一套版式与数据层</figcaption>
+          </figure>
+          <figure class="cs-figure cs-figure--sheet" data-reveal>
+            <img src="assets/img/case-labels.jpg" alt="三款茶的罐面标签打样：岩骨、白露、松风，各有 LOT 编号" width="1440" height="374" loading="lazy">
+            <figcaption>标签打样 / 批次号、字体与印章共用一套规则</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section cs-section--dark" id="motion" aria-labelledby="motion-title">
+      <div class="wrap cs-section__grid">
+        <p class="label label--dark cs-section__label"><span class="label__num">05</span> 交互 / Motion</p>
+        <div class="cs-section__body">
+          <h2 id="motion-title" data-reveal>把动效预算，<br>全部压进一次冲泡。</h2>
+          <div class="cs-prose cs-prose--dark" data-reveal style="--delay:.08s">
+            <p>初版有自定义光标、磁吸按钮和纸幕转场。它们让页面“像作品集”，却和茶无关。重做时全部删除，只留下唯一一个复杂交互：冲泡。</p>
+            <p>温器、投茶、醒茶、注水、出汤。滚动推进，盖碗、水流、茶汤与步骤同步变化。没有劫持滚动：原生滚动、sticky 舞台、一个轻量状态机。</p>
+          </div>
+          <figure class="cs-figure cs-figure--dark" data-reveal>
+            <img src="assets/img/case-brew.jpg" alt="冲泡页的滚动交互：盖碗、橙红茶汤与步骤文案" width="1440" height="900" loading="lazy">
+            <figcaption>冲泡 / 滚动第四步：注水</figcaption>
+          </figure>
+          <div class="cs-signature">
+            <div><h3>为什么是冲泡</h3><p>这是茶与网页最自然的交集：一个需要等待的动作。它能把“山场”与“火功”落到用户的手上。</p></div>
+            <div><h3>怎么实现</h3><p>步骤几何位置驱动 active 状态，进度条读取整段滚动比例；SVG 的盖子、水流、液面与茶杯由状态类切换。</p></div>
+            <div><h3>怎么降级</h3><p>移动端与减少动态偏好下，交互变成一张静态冲泡图解与完整步骤，不隐藏任何必要信息。</p></div>
+          </div>
+          <blockquote class="cs-quote cs-quote--dark" data-reveal>
+            <p>“动效不是装饰，<br>是把‘等’这件事画出来。”</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="build" aria-labelledby="build-title">
+      <div class="wrap cs-section__grid">
+        <p class="label cs-section__label"><span class="label__num">06</span> 工程 / Build</p>
+        <div class="cs-section__body">
+          <h2 id="build-title" data-reveal>品牌四页，零构建，<br>零运行时依赖。</h2>
+          <div class="cs-prose" data-reveal style="--delay:.08s">
+            <p>静态 HTML、CSS 与 JavaScript；字体自托管，图片统一为 WebP；没有框架，没有打包器。原生滚动，动画只碰 transform 与 opacity，头部的滚动监听只切换一个类名，冲泡舞台的监听用 rAF 节流。</p>
+            <p>可访问性不是最后补的：跳过链接、移动菜单焦点陷阱、键盘 Tab、表单错误提示、<code>prefers-reduced-motion</code> 降级。字体只保留站点实际用到的字形。</p>
+          </div>
+          <dl class="cs-stats" data-reveal>
+            <div><dt>品牌页面</dt><dd>04</dd></div>
+            <div><dt>茶品状态</dt><dd>03</dd></div>
+            <div><dt>运行时依赖</dt><dd>00</dd></div>
+            <div><dt>共享数据层</dt><dd>01</dd></div>
+          </dl>
+          <figure class="cs-figure" data-reveal>
+            <img src="assets/img/case-visit.jpg" alt="到访页的预约成功状态：显示日期、席别、人数与预约编号" width="1440" height="900" loading="lazy">
+            <figcaption>到访 / 预约成功状态与确认信息</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-reflection" id="reflection" aria-labelledby="reflection-title">
+      <div class="wrap cs-reflection__grid">
+        <div>
+          <p class="label"><span class="label__num">07</span> 反思 / Reflection</p>
+          <h2 id="reflection-title" data-reveal>还差的，<br>和下一步。</h2>
+        </div>
+        <div class="cs-reflection__body" data-reveal style="--delay:.1s">
+          <p>预约表单目前只在前端演示，真实上线需要后端、库存与通知；订购入口是真实的邮件链接，但不包含支付。产品摄影仍是 AI 生成，正式品牌需要实拍与印刷打样。</p>
+          <p>下一步会做三件事：用 CMS 让主理人自己换茶单；把冲泡参数做成可保存的卡片；补一版英文。最大的收获是：克制不是少做，而是把力气放在能建立信任的地方。</p>
+          <p class="cs-note">本页面中的品牌、茶品、价格、地址与预约均为虚构，仅用于作品集展示。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-cta" aria-labelledby="cs-cta-title">
+      <div class="wrap">
+        <p class="serif-en cs-cta__en">Now, steep one.</p>
+        <h2 id="cs-cta-title" data-reveal>看完了，<br>去喝一泡。</h2>
+        <div class="cs-cta__links">
+          <a class="btn btn--light" href="index.html"><span>浏览网站</span><span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="link-arrow link-arrow--light" href="brew.html">冲泡指南</a>
+          <a class="link-arrow link-arrow--light" href="visit.html">预约到访</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__word">見山</p>
+          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，一年一季。</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>茶 / Teas</h4>
+            <a href="tea.html?tea=yan-gu">岩骨</a>
+            <a href="tea.html?tea=bai-lu">白露</a>
+            <a href="tea.html?tea=song-feng">松风</a>
+          </div>
+          <div class="footer__col">
+            <h4>站点 / Site</h4>
+            <a href="index.html#origin">山场</a>
+            <a href="brew.html">冲泡</a>
+            <a href="visit.html">到访</a>
+            <a href="case-study.html">案例研究</a>
+          </div>
+          <div class="footer__col">
+            <h4>联系 / Contact</h4>
+            <a href="mailto:tea@jianshan.co">tea@jianshan.co</a>
+            <p>微信 · JIANSHAN-TEA</p>
+            <p>武夷山市慧苑坑 27 号</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> 見山茶事 · 虚构品牌</p>
+        <p>本站为作品集项目 · 设计与开发于 2026</p>
+        <a href="#main">回到顶部 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>見山 JIANSHAN — 冲泡指南 The Brew</title>
+  <meta name="description" content="一泡武夷岩茶的两分半钟：温器、投茶、醒茶、注水、出汤。附盖碗、壶泡与冷泡参数。">
+  <meta name="theme-color" content="#f1ece1">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="見山 JIANSHAN — 冲泡指南 The Brew">
+  <meta property="og:description" content="把五个动作，放慢。一泡岩茶的完整步骤与参数。">
+  <meta property="og:image" content="assets/img/pour-wide.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/core.css">
+  <link rel="stylesheet" href="assets/css/brew.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="page-brew">
+  <a class="skip" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="見山 JIANSHAN 首页">
+      <span class="brand__mark">見山</span>
+      <span class="brand__sub">JIANSHAN<br>Wuyi Rock Tea</span>
+    </a>
+    <nav class="primary-nav" aria-label="主导航">
+      <a href="index.html#teas">茶</a>
+      <a href="index.html#origin">山场</a>
+      <a href="brew.html" aria-current="page">冲泡</a>
+      <a href="visit.html">到访</a>
+    </nav>
+    <div class="header__actions">
+      <a class="header__book" href="visit.html">预约茶席 <span aria-hidden="true">→</span></a>
+      <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="menu">
+        菜单
+        <span class="menu-toggle__bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="全站菜单" hidden aria-hidden="true">
+    <div class="menu__inner">
+      <div class="menu__top">
+        <span>見山 · 武夷岩茶</span>
+        <button class="menu__close" type="button" data-menu-close>关闭 <span aria-hidden="true">×</span></button>
+      </div>
+      <nav class="menu__nav" aria-label="全站导航">
+        <a href="index.html"><small>01</small>首页</a>
+        <a href="index.html#teas"><small>02</small>三款茶</a>
+        <a href="index.html#origin"><small>03</small>山场</a>
+        <a href="brew.html"><small>04</small>冲泡</a>
+        <a href="visit.html"><small>05</small>到访</a>
+        <a href="case-study.html"><small>06</small>案例研究</a>
+      </nav>
+      <div class="menu__foot">
+        <div>
+          <a href="mailto:tea@jianshan.co">tea@jianshan.co</a><br>
+          微信 · JIANSHAN-TEA
+        </div>
+        <div>
+          福建省武夷山市慧苑坑 27 号<br>
+          周四至周一 · 10:00—18:00
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="brew-hero" aria-labelledby="brew-hero-title">
+      <div class="wrap">
+        <div class="brew-hero__grid">
+          <div class="brew-hero__copy">
+            <p class="label"><span class="label__num">03</span> 冲泡 / The brew</p>
+            <h1 id="brew-hero-title">一泡茶，<br>两分半钟。</h1>
+            <p class="brew-hero__lead">温器、投茶、醒茶、注水、出汤。五个动作，把山场、火功和当天的状态，落在同一只盖碗里。以岩骨为例，8 克，110 毫升。</p>
+            <a class="link-arrow" href="#ritual">开始五步</a>
+          </div>
+          <ol class="brew-hero__steps">
+            <li><span class="brew-hero__num">01</span><span class="brew-hero__name">温器</span><span class="brew-hero__en">Warm</span><span class="brew-hero__time">10 s</span></li>
+            <li><span class="brew-hero__num">02</span><span class="brew-hero__name">投茶</span><span class="brew-hero__en">Leaf</span><span class="brew-hero__time">8 g</span></li>
+            <li><span class="brew-hero__num">03</span><span class="brew-hero__name">醒茶</span><span class="brew-hero__en">Rinse</span><span class="brew-hero__time">5 s</span></li>
+            <li><span class="brew-hero__num">04</span><span class="brew-hero__name">注水</span><span class="brew-hero__en">Pour</span><span class="brew-hero__time">8 s</span></li>
+            <li><span class="brew-hero__num">05</span><span class="brew-hero__name">出汤</span><span class="brew-hero__en">Serve</span><span class="brew-hero__time">8 s</span></li>
+          </ol>
+        </div>
+        <dl class="brew-hero__meta">
+          <div><dt>茶量</dt><dd>8 g</dd></div>
+          <div><dt>水量</dt><dd>110 ml</dd></div>
+          <div><dt>水温</dt><dd>100 °C</dd></div>
+          <div><dt>首泡</dt><dd>8 s</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="ritual" id="ritual" data-ritual aria-labelledby="ritual-title">
+      <div class="wrap ritual__intro">
+        <p class="label label--dark"><span class="label__num">04</span> 五步 / The ritual</p>
+        <h2 id="ritual-title">把五个动作，<br>放慢。</h2>
+        <p class="ritual__lead">向下滚动，走完一泡茶。水到，茶到，手到。急不得，也不用急。</p>
+      </div>
+
+      <div class="wrap ritual__layout">
+        <div class="ritual__visual" data-ritual-visual>
+          <div class="ritual__stage" data-ritual-stage="0">
+            <div class="ritual__hud" aria-hidden="true">
+              <p class="ritual__count"><span data-ritual-num>01</span><i>/ 05</i></p>
+              <div class="ritual__titles">
+                <h3 data-ritual-title>温器</h3>
+                <p data-ritual-en>Warm the vessel</p>
+              </div>
+              <p class="ritual__param" data-ritual-param>100 °C · 10 秒</p>
+            </div>
+
+            <svg class="gaiwan" viewBox="0 0 560 620" role="img" aria-labelledby="gaiwan-title gaiwan-desc">
+              <title id="gaiwan-title">盖碗冲泡示意</title>
+              <desc id="gaiwan-desc">线描盖碗，随滚动依次演示温器、投茶、醒茶、注水和出汤。</desc>
+              <defs>
+                <clipPath id="gaiwan-clip">
+                  <path d="M160 331c7 86 56 158 120 168 64-10 113-82 120-168Z"/>
+                </clipPath>
+                <clipPath id="cup-clip">
+                  <path d="M456 431c2 40 16 57 36 57s34-17 36-57Z"/>
+                </clipPath>
+              </defs>
+
+              <circle class="gaiwan__halo" cx="280" cy="342" r="224"/>
+              <circle class="gaiwan__warm" cx="280" cy="342" r="208"/>
+              <ellipse class="gaiwan__saucer" cx="280" cy="542" rx="170" ry="24"/>
+              <path class="gaiwan__line" d="M112 542c0 20 336 20 336 0"/>
+              <path class="gaiwan__line" d="M234 512h92l-7 17h-78z"/>
+              <path class="gaiwan__body" d="M154 330c3 94 57 168 126 180 69-12 123-86 126-180"/>
+              <ellipse class="gaiwan__rim" cx="280" cy="330" rx="126" ry="17"/>
+
+              <g clip-path="url(#gaiwan-clip)">
+                <rect class="gaiwan__liquid" x="150" y="330" width="260" height="200"/>
+                <ellipse class="gaiwan__surface" cx="280" cy="331" rx="120" ry="14"/>
+              </g>
+
+              <g class="gaiwan__leaves">
+                <ellipse cx="248" cy="472" rx="15" ry="5" transform="rotate(-18 248 472)"/>
+                <ellipse cx="286" cy="486" rx="14" ry="5" transform="rotate(24 286 486)"/>
+                <ellipse cx="316" cy="466" rx="13" ry="5" transform="rotate(-6 316 466)"/>
+                <ellipse cx="266" cy="452" rx="12" ry="4" transform="rotate(38 266 452)"/>
+                <ellipse cx="300" cy="444" rx="12" ry="4" transform="rotate(-32 300 444)"/>
+                <ellipse cx="336" cy="486" rx="12" ry="4" transform="rotate(12 336 486)"/>
+              </g>
+
+              <g class="gaiwan__steam">
+                <path d="M236 262c-15-26 14-40 2-68"/>
+                <path d="M280 250c-17-30 16-44 2-78"/>
+                <path d="M324 264c-13-25 14-38 2-62"/>
+              </g>
+
+              <g class="gaiwan__lid">
+                <ellipse class="gaiwan__rim" cx="280" cy="316" rx="105" ry="14"/>
+                <path class="gaiwan__body" d="M175 316c8-48 50-84 105-84s97 36 105 84"/>
+                <circle class="gaiwan__knob" cx="280" cy="224" r="9"/>
+                <path class="gaiwan__line" d="M280 233v-9"/>
+              </g>
+
+              <path class="gaiwan__stream" d="M404 42C402 138 354 236 308 300"/>
+              <path class="gaiwan__serve" d="M372 344C408 364 438 398 468 424"/>
+
+              <g class="gaiwan__cup">
+                <ellipse class="gaiwan__rim" cx="492" cy="431" rx="38" ry="9"/>
+                <path class="gaiwan__body" d="M454 431c2 41 17 58 38 58s36-17 38-58"/>
+                <g clip-path="url(#cup-clip)">
+                  <rect class="gaiwan__cup-liquid" x="450" y="430" width="84" height="64"/>
+                </g>
+              </g>
+            </svg>
+
+            <p class="ritual__mobile-note">一泡 · 8 g / 110 ml / 100 °C</p>
+            <div class="ritual__progress" aria-hidden="true"><span data-ritual-progress></span></div>
+          </div>
+        </div>
+
+        <ol class="ritual__steps" data-ritual-steps>
+          <li class="ritual-step is-active" data-ritual-step data-title="温器" data-en="Warm the vessel" data-param="100 °C · 10 秒">
+            <span class="ritual-step__num">01</span>
+            <div class="ritual-step__body">
+              <h3>温器</h3>
+              <p class="ritual-step__en">Warm the vessel</p>
+              <p>沸水绕盖碗一周，温透后弃水。器热，香才留得住；碗冷，第一泡就散了。</p>
+              <p class="ritual-step__param">水温 100 °C · 十秒</p>
+            </div>
+          </li>
+          <li class="ritual-step" data-ritual-step data-title="投茶" data-en="Leaf into the bowl" data-param="8 g · 轻摇三下">
+            <span class="ritual-step__num">02</span>
+            <div class="ritual-step__body">
+              <h3>投茶</h3>
+              <p class="ritual-step__en">Leaf into the bowl</p>
+              <p>八克干茶入碗，轻摇三下，先闻干香。足火茶此时是炭火与熟果，别急着注水。</p>
+              <p class="ritual-step__param">茶量 8 g · 110 ml 盖碗</p>
+            </div>
+          </li>
+          <li class="ritual-step" data-ritual-step data-title="醒茶" data-en="Wake the leaf" data-param="5 秒 · 不喝">
+            <span class="ritual-step__num">03</span>
+            <div class="ritual-step__body">
+              <h3>醒茶</h3>
+              <p class="ritual-step__en">Wake the leaf</p>
+              <p>高冲注水，五秒即出。这一泡不喝，只为把茶叫醒，让紧结的条索舒展开。</p>
+              <p class="ritual-step__param">快进快出 · 五秒</p>
+            </div>
+          </li>
+          <li class="ritual-step" data-ritual-step data-title="注水" data-en="Pour low and slow" data-param="100 °C · 沿壁低斟">
+            <span class="ritual-step__num">04</span>
+            <div class="ritual-step__body">
+              <h3>注水</h3>
+              <p class="ritual-step__en">Pour low and slow</p>
+              <p>沿壁低斟，水线细而稳，不要直冲茶叶。注到七分满，静候八秒。</p>
+              <p class="ritual-step__param">低斟 · 七分满 · 八秒</p>
+            </div>
+          </li>
+          <li class="ritual-step" data-ritual-step data-title="出汤" data-en="Serve the first cup" data-param="8 秒 · 留根三分之一">
+            <span class="ritual-step__num">05</span>
+            <div class="ritual-step__body">
+              <h3>出汤</h3>
+              <p class="ritual-step__en">Serve the first cup</p>
+              <p>食指压盖，三指托碗，公道分汤。每杯七分满，碗里留根三分之一，下一泡更稳。</p>
+              <p class="ritual-step__param">八秒出汤 · 留根</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="guide section" id="guide" aria-labelledby="guide-title">
+      <div class="wrap">
+        <header class="guide__head">
+          <div>
+            <p class="label"><span class="label__num">05</span> 参数 / Guide</p>
+            <h2 id="guide-title">选一只<br>顺手的器。</h2>
+          </div>
+          <p class="guide__note">三种泡法，对应三种场合。参数以岩骨为基准，白露水温降 5°C，松风可多坐五秒。</p>
+        </header>
+
+        <div class="guide__layout">
+          <div class="guide__main">
+            <div class="guide__tabs" role="tablist" aria-label="冲泡方式">
+              <button role="tab" id="tab-gaiwan" aria-controls="panel-gaiwan" aria-selected="true" tabindex="0">盖碗</button>
+              <button role="tab" id="tab-pot" aria-controls="panel-pot" aria-selected="false" tabindex="-1">壶泡</button>
+              <button role="tab" id="tab-cold" aria-controls="panel-cold" aria-selected="false" tabindex="-1">冷泡</button>
+            </div>
+
+            <div class="guide__panel" role="tabpanel" id="panel-gaiwan" aria-labelledby="tab-gaiwan">
+              <dl class="guide__params">
+                <div><dt>茶量</dt><dd>8 g</dd></div>
+                <div><dt>水量</dt><dd>110 ml</dd></div>
+                <div><dt>水温</dt><dd>100 °C</dd></div>
+                <div><dt>首泡</dt><dd>8 s</dd></div>
+              </dl>
+              <ol class="guide__steps">
+                <li><span>01</span><div><h3>温器</h3><p>沸水绕碗一周，弃水。</p></div></li>
+                <li><span>02</span><div><h3>投茶</h3><p>8 克入碗，轻摇三下闻香。</p></div></li>
+                <li><span>03</span><div><h3>醒茶</h3><p>高冲注水，5 秒即出，不喝。</p></div></li>
+                <li><span>04</span><div><h3>注水</h3><p>沿壁低斟至七分满，静候 8 秒。</p></div></li>
+                <li><span>05</span><div><h3>出汤</h3><p>留根三分之一；4—7 泡每泡递增 4 秒。</p></div></li>
+              </ol>
+              <p class="guide__footnote">十泡之后可坐杯；尾水的木质甜，别倒太早。</p>
+            </div>
+
+            <div class="guide__panel" role="tabpanel" id="panel-pot" aria-labelledby="tab-pot" hidden>
+              <dl class="guide__params">
+                <div><dt>茶量</dt><dd>10 g</dd></div>
+                <div><dt>水量</dt><dd>200 ml</dd></div>
+                <div><dt>水温</dt><dd>100 °C</dd></div>
+                <div><dt>首泡</dt><dd>15 s</dd></div>
+              </dl>
+              <ol class="guide__steps">
+                <li><span>01</span><div><h3>温壶</h3><p>沸水内外淋壶，倒空。</p></div></li>
+                <li><span>02</span><div><h3>投茶</h3><p>10 克入壶，壶身略小于盖碗，聚香。</p></div></li>
+                <li><span>03</span><div><h3>润茶</h3><p>注水即出，洗去浮尘，唤醒条索。</p></div></li>
+                <li><span>04</span><div><h3>注水</h3><p>高冲至满，刮沫，盖上壶盖。</p></div></li>
+                <li><span>05</span><div><h3>出汤</h3><p>15 秒出汤，壶嘴留最后一滴。</p></div></li>
+              </ol>
+              <p class="guide__footnote">紫砂壶吸香，适合老丛与足火茶；白露建议仍用盖碗。</p>
+            </div>
+
+            <div class="guide__panel" role="tabpanel" id="panel-cold" aria-labelledby="tab-cold" hidden>
+              <dl class="guide__params">
+                <div><dt>茶量</dt><dd>5 g</dd></div>
+                <div><dt>水量</dt><dd>500 ml</dd></div>
+                <div><dt>水温</dt><dd>常温</dd></div>
+                <div><dt>时间</dt><dd>6 h</dd></div>
+              </dl>
+              <ol class="guide__steps">
+                <li><span>01</span><div><h3>投茶</h3><p>5 克干茶入瓶，不洗茶。</p></div></li>
+                <li><span>02</span><div><h3>注水</h3><p>常温矿泉水注满，轻摇两下。</p></div></li>
+                <li><span>03</span><div><h3>冷藏</h3><p>冰箱冷藏 6 小时，别放常温过夜。</p></div></li>
+                <li><span>04</span><div><h3>过滤</h3><p>滤出茶叶，24 小时内喝完。</p></div></li>
+              </ol>
+              <p class="guide__footnote">冷泡更适合白露；岩骨冷泡会显得薄，松风则偏苦。</p>
+            </div>
+          </div>
+
+          <aside class="timer" aria-labelledby="timer-title" data-timer>
+            <p class="label"><span class="label__num">1:00</span> 工具 / Timer</p>
+            <h3 id="timer-title">出汤计时</h3>
+            <p class="timer__lead">按下开始，到点出汤。</p>
+            <div class="timer__dial">
+              <svg viewBox="0 0 220 220" aria-hidden="true">
+                <circle class="timer__track" cx="110" cy="110" r="96"/>
+                <circle class="timer__ring" cx="110" cy="110" r="96" data-timer-ring/>
+              </svg>
+              <div class="timer__readout">
+                <span data-timer-value>8</span><small>s</small>
+              </div>
+            </div>
+            <div class="timer__presets" role="group" aria-label="计时长度">
+              <button type="button" data-timer-preset="8" class="is-active" aria-pressed="true">8 秒</button>
+              <button type="button" data-timer-preset="12" aria-pressed="false">12 秒</button>
+              <button type="button" data-timer-preset="20" aria-pressed="false">20 秒</button>
+            </div>
+            <button class="btn timer__start" type="button" data-timer-start>开始计时</button>
+            <p class="timer__hint" data-timer-hint>第一泡 · 8 秒</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="brew-notes" aria-labelledby="brew-notes-title">
+      <div class="wrap brew-notes__grid">
+        <div class="brew-notes__head">
+          <p class="label"><span class="label__num">06</span> 注意 / Notes</p>
+          <h2 id="brew-notes-title">三个常见的错。</h2>
+        </div>
+        <ol class="brew-notes__list">
+          <li data-reveal>
+            <span>01</span>
+            <div><h3>水反复烧</h3><p>千滚水会让汤感发闷。每次煮到 100°C 就停，保温在 90°C 以上即可。</p></div>
+          </li>
+          <li data-reveal style="--delay:.08s">
+            <span>02</span>
+            <div><h3>闷盖太久</h3><p>岩茶怕闷，尤其足火。注水后别盖着聊天，出汤要利落，留根三分之一。</p></div>
+          </li>
+          <li data-reveal style="--delay:.16s">
+            <span>03</span>
+            <div><h3>新茶急着喝</h3><p>刚焙完的茶火气未退。轻火等二十天，足火至少四十五天，松风要六十天。</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="brew-cta" aria-labelledby="brew-cta-title">
+      <div class="wrap brew-cta__inner">
+        <p class="serif-en brew-cta__en">Start with a tin.</p>
+        <h2 id="brew-cta-title" data-reveal>从一罐岩骨开始。</h2>
+        <p data-reveal style="--delay:.08s">一罐五十克，约二十泡。喝完了，再来山上续。</p>
+        <div class="brew-cta__actions">
+          <a class="btn" href="tea.html?tea=yan-gu"><span>认识岩骨</span><span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="link-arrow" href="visit.html">预约品鉴</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__word">見山</p>
+          <p class="footer__tag">武夷岩茶 · 慧苑坑<br>三亩老茶园，一年一季。</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>茶 / Teas</h4>
+            <a href="tea.html?tea=yan-gu">岩骨</a>
+            <a href="tea.html?tea=bai-lu">白露</a>
+            <a href="tea.html?tea=song-feng">松风</a>
+          </div>
+          <div class="footer__col">
+            <h4>站点 / Site</h4>
+            <a href="index.html#origin">山场</a>
+            <a href="brew.html">冲泡</a>
+            <a href="visit.html">到访</a>
+            <a href="case-study.html">案例研究</a>
+          </div>
+          <div class="footer__col">
+            <h4>联系 / Contact</h4>
+            <a href="mailto:tea@jianshan.co">tea@jianshan.co</a>
+            <p>微信 · JIANSHAN-TEA</p>
+            <p>武夷山市慧苑坑 27 号</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> 見山茶事 · 虚构品牌</p>
+        <p>本站为作品集项目 · 设计与开发于 2026</p>
+        <a href="#main">回到顶部 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/brew.js" defer></script>
+</body>
+</html>
